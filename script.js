@@ -90,7 +90,7 @@ function setupPixelListeners(color) {
 na.addEventListener('input', (e) => {
     clearchild();
     let newSize = parseInt(e.target.value,10);
-    if(newSize>55) newSize=55;
+    if(newSize>55) newSize=100;
     if(newSize<1) newSize=1;
     createPixelsGrid(newSize);
     setupPixelListeners(color.value); // Set up listeners for new pixels
